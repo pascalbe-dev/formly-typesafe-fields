@@ -1,0 +1,34 @@
+{
+  "name": "formly-typesafe-fields",
+  "version": "1.0.0",
+  "description": "A small extension package to formly to support typesafety in formly field configs.",
+  "main": "src/index.js",
+  "scripts": {
+    "commit": "git add . && git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascalbe-dev/formly-typesafe-fields.git"
+  },
+  "keywords": [
+    "angular",
+    "formly",
+    "typesafety"
+  ],
+  "author": "Pascal Betting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pascalbe-dev/formly-typesafe-fields/issues"
+  },
+  "homepage": "https://github.com/pascalbe-dev/formly-typesafe-fields#readme",
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
