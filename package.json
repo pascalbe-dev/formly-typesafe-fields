@@ -31,16 +31,26 @@
   },
   "homepage": "https://github.com/pascalbe-dev/formly-typesafe-fields#readme",
   "devDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@ngx-formly/core": "^5.5.10",
     "@types/jest": "^25.1.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "jest": "^25.1.0",
+    "marked": "^0.7.0",
     "prettier": "^1.19.1",
     "semantic-release": "^16.0.1",
     "ts-jest": "^25.1.0",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "zone.js": "~0.9.1"
+  },
+  "peerDependencies": {
+    "@ngx-formly/core": "^5.0.0"
   },
   "config": {
     "commitizen": {
