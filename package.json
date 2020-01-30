@@ -2,10 +2,17 @@
   "name": "formly-typesafe-fields",
   "version": "0.0.0-development",
   "description": "A small extension package to formly to support typesafety in formly field configs.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "types": "lib/index.d.ts",
   "scripts": {
     "commit": "git add . && git-cz",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "test": "jest --config jest.config.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -24,9 +31,16 @@
   },
   "homepage": "https://github.com/pascalbe-dev/formly-typesafe-fields#readme",
   "devDependencies": {
+    "@types/jest": "^25.1.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
-    "semantic-release": "^16.0.1"
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "semantic-release": "^16.0.1",
+    "ts-jest": "^25.1.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
   },
   "config": {
     "commitizen": {
